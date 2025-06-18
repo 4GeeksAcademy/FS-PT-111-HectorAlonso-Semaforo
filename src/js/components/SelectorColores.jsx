@@ -1,7 +1,4 @@
-//para este semaforo, seleciona un color y cambia el color del semaforo
-//usando un usestate y dentro del returno un operador ternarios que alterna entre el color seleccionado y gris
-//despues un onlick que cambia el set color
-//al principio, para probar lo habia hecho a traves de botones, que he dejado ese codigo comentado, se puede ver el fincionamiento descomentando elcodigo
+//creamos la clase y el usestaye para el color, despues con el onclick seleccionamos el color y es el que presenta
 import { useState } from "react"
 
 export const SelectorColores = () => {
@@ -19,12 +16,6 @@ export const SelectorColores = () => {
                     <div className="colorSemaforo" style={{backgroundColor: color === "green" ? "green": "gray"}}  onClick={() => setColor("green")}/>
                 </div>  
             </div>
-
-            {/*<br />
-            <button style={{backgroundColor: "red"}} onClick={()=> setColor("red") }>rojo</button>
-            <button style={{backgroundColor: "yellow"}} onClick={()=> setColor("yellow") }>amarillo</button>
-            <button style={{backgroundColor: "green"}} onClick={()=> setColor("green") }>verde</button>
-            */}
         </div>
     )
 }
